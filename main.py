@@ -7,12 +7,12 @@ skills_list = [
     {
         "id": 1,
         "heading": "Web Design & Development",
-        "subheading": "Responsive sites via flask and bootstrap.",
+        "subheading": "Responsive sites via flask and Bootstrap.",
         "icon": "icon-screen-smartphone",
     },
     {
         "id": 2,
-        "heading": "GUIs",
+        "heading": "GUI Design",
         "subheading": "Made with PyQt and Tkinter.",
         "icon": "icon-screen-desktop"
     },

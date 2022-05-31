@@ -13,7 +13,6 @@
         <!-- Simple line icons-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
         <!-- Google fonts-->
-<!--        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:wght@300;400&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -21,18 +20,6 @@
         <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-<!--        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>-->
-<!--        <nav id="sidebar-wrapper">-->
-<!--            <ul class="sidebar-nav">-->
-<!--                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>-->
-<!--                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>-->
-<!--                <li class="sidebar-nav-item"><a href="#about">About</a></li>-->
-<!--                <li class="sidebar-nav-item"><a href="#services">Services</a></li>-->
-<!--                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>-->
-<!--                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>-->
-<!--            </ul>-->
-<!--        </nav>-->
         <div class="navbar-bg fixed-top"></div>
         <nav class="navbar navbar-expand-sm fixed-top" id="mainNav">
             <div class="container navbar-container">
@@ -42,9 +29,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-3 px-lg-3 rounded-pill" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-3 px-lg-3 rounded-pill" href="#skills">Skills</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-3 px-lg-3 rounded-pill" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-3 px-lg-3 rounded-pill" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-3 px-lg-3 rounded-pill" href="#portfolio">Portfolio</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,9 +56,6 @@
                             <li class="list-inline-item">
                                 <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
                             </li>
-                            <li class="list-inline-item">
-                                <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
-                            </li>
                         </ul>
                     <div class="bounce-down">
                         <p class="bounce-bottom">{</p>
@@ -84,13 +68,9 @@
 
             </div>
         </header>
-        <!-- Services-->
-        <section class="content-section bg-white text-center" id="services">
+        <!-- Skills-->
+        <section class="content-section bg-white text-center" id="skills">
             <div class="container px-2 px-lg-5">
-<!--                <div class="content-section-heading">-->
-<!--                    <h3 class="text-secondary mb-0">Services</h3>-->
-<!--                    <h2 class="mb-5">What We Offer</h2>-->
-<!--                </div>-->
                 <div class="row gx-lg-5">
                     {% for skill in skills %}
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -104,16 +84,17 @@
         </section>
         <!-- About-->
         <section class="content-section bg-primary" id="about">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+            <div class="container px-4 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-evenly text-start">
+                    <div class="col-md-5">
+                        <img class="profile rounded-3" src="static/assets/img/placeholder-profile.jpg">
+                    </div>
+                    <div class="col-md-5">
                         <p class="lead mb-5">
-                            This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-                            <a href="https://unsplash.com/">Unsplash</a>
-                            !
+                            I'm a Chicago-based, newly minted programmer coming off three years of facility management
+                            and six years of collaborative pastoral ministry. I'm detail-oriented with an artistic
+                            eye, and I love a challenge.
                         </p>
-                        <a class="btn btn-dark btn-xl" href="#services">What We Offer</a>
                     </div>
                 </div>
             </div>
@@ -121,10 +102,6 @@
         <!-- Portfolio-->
         <section class="content-section" id="portfolio">
             <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
-                </div>
                 <div class="row gx-0">
                     {% for project in projects %}
 
@@ -144,46 +121,18 @@
                 </div>
             </div>
         </section>
-        <!-- Callout-->
-        <section class="callout">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mx-auto mb-5">
-                    Welcome to
-                    <em>your</em>
-                    next website!
-                </h2>
-                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
-            </div>
-        </section>
-        <!-- Call to Action-->
-        <section class="content-section bg-primary text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
-            </div>
-        </section>
-        <!-- Map-->
-        <div class="map" id="contact">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.157287079469!2d-87.78800004987342!3d41.975432667195996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcbfd296eb08f%3A0xd16911d007c11552!2s6301%20W%20Higgins%20Ave%2C%20Chicago%2C%20IL%2060630!5e0!3m2!1sen!2sus!4v1650471276167!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <br />
-            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
-        </div>
         <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
-                <ul class="list-inline mb-5">
+        <footer class="footer bg-secondary text-center">
+            <div class="container px-4 px-lg-5 mb-0">
+                <ul class="list-inline" id="footer-links">
                     <li class="list-inline-item">
                         <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-linkedin"></i></a>
                     </li>
                     <li class="list-inline-item">
                         <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
                     </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
-                    </li>
                 </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Your Website 2022</p>
+                <p class="text-muted small mb-0">&copy; 2022 Phil Landin</p>
             </div>
         </footer>
         <!-- Scroll to Top Button-->

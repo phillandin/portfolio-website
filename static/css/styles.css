@@ -4166,6 +4166,7 @@ textarea.form-control-lg {
   z-index: 900 !important;
   background-color: rgb(235, 245, 248);
   overflow: hidden;
+  opacity: 0.0;
 }
 
 .navbar-bg:before {
@@ -4176,34 +4177,51 @@ textarea.form-control-lg {
   top: -120%;
   left: -5%;
   z-index: -1;
-  background: linear-gradient(90deg, rgba(233, 244, 248, .95) 0%, rgba(233, 244, 248, .95) 100%), url("../assets/img/python_img_3.png") 0 0 repeat;
-  transform: rotate(-10deg)
+  background: linear-gradient(90deg, rgba(233, 244, 248, .91) 0%, rgba(233, 244, 248, .91) 100%), url("../assets/img/python_img_3.png") 0 0 repeat;
+  transform: rotate(-10deg);
+  opacity: 0.0;
 }
 
 @media (min-width: 576px) {
+  .navbar-bg {
+    opacity: 1.0;
+  }
   .navbar-bg:before {
     top: -150%;
+    opacity: 1.0;
   }
 }
 
 @media (min-width: 768px) {
+  .navbar-bg {
+    opacity: 1.0;
+  }
   .navbar-bg:before {
     top: -160%;
     left: 3%;
+    opacity: 1.0;
   }
 }
 
 @media (min-width: 992px) {
+  .navbar-bg {
+    opacity: 1.0;
+  }
   .navbar-bg:before {
     top: -190%;
     left: 3%;
+    opacity: 1.0;
   }
 }
 
 @media (min-width: 1220px) {
+  .navbar-bg {
+    opacity: 1.0;
+  }
   .navbar-bg:before {
     top: -220%;
     left: 3%;
+    opacity: 1.0;
   }
 }
 

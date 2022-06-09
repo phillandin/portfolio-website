@@ -37,14 +37,14 @@ project_list = [
         "name": "Watermarker",
         "caption": "Image watermarking desktop app built with Pillow and PyQt6.",
         "image": "assets/img/watermarker-img-1.png",
-        "url": "#"
+        "url": "https://github.com/phillandin/watermarker#readme"
     },
     {
         "id": 2,
         "name": "Breakout",
         "caption": "Classic arcade game recreated with the Python turtle library.",
         "image": "assets/img/breakout-screenshot-2.png",
-        "url": "https://github.com/phillandin/breakout-game"
+        "url": "https://github.com/phillandin/breakout-game#readme"
     },
     {
         "id": 3,

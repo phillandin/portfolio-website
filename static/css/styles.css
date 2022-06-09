@@ -4069,9 +4069,10 @@ textarea.form-control-lg {
 }
 
 .nav-link {
-  background-color: rgba(235, 245, 248, .8);
-  display: block;
+  width: 25%;
   padding: 0.5rem 1rem;
+  background-color: rgba(235, 245, 248, .95);
+  display: block;
   color: #1D809F;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -4079,6 +4080,15 @@ textarea.form-control-lg {
   font-weight: 500;
   font-size: 1.1rem;
 }
+@media (min-width: 576px) {
+  .nav-link {
+    border-radius: 50rem !important;
+    width: 100%;
+    background-color: rgba(235, 245, 248, .8);
+  }
+}
+
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -11506,6 +11516,38 @@ html {
 .content-section-heading h3, .content-section-heading .h3 {
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .headshot {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .bio {
+    flex: 0 0 auto;
+    width: 45%;
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .headshot {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+  .bio {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    padding-top: 0rem;
+  }
+}
+@media (min-width: 1200px) {
+  .headshot {
+    flex: 0 0 auto;
+    width: 36.66666666%;
+  }
+  .bio {
+    padding-top: 2rem;
+  }
 }
 
 .text-faded {

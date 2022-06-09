@@ -28,5 +28,4 @@ header div. The intent was to make it feel like a chunk of the header that stick
 scrolls down. To do this, it was necessary to split what feels like a single element (the navigation bar) into two: the 
 actual navigation bar and its buttons, which remains on top of all the other page elements, and the navigation bar's
 background, which is hidden behind the header div until the user scrolls down. The navbar background's z-index is set to
-lower than the header div and the navbar but greater than all the other page elements so that it cannot be seen while
-the header div is still visible in the viewport.</p>
+lower than the z-indeces of the header div and the navbar but greater than those of the other page elements.</p>

@@ -9,7 +9,7 @@ to the parent div of each bracket. For example,
 <p>Using an @keyframes rule, the transform CSS property is used to change the x position of the div, with the
 intervening keyframes consisting of a return to its original x coordinate. Here's a simplified
 example:</p>
-<p><em>@keyframes bounce-right {0%, 25%, 45%, 100% {transform: translateX(0)} 20% {transform: translateX(6px)} 40% 
+<p><em>@keyframes bounce-right {0%, 25%, 45% {transform: translateX(0)} 20% {transform: translateX(6px)} 40% 
 {transform: translateX(1.5px)}}</em></p>
 <p>To adjust the header design responsively, at the width of a mobile screen, the brackets switch from positions on 
 the left and right sides of the header div to positions on the top and bottom of the header div. This effect

@@ -50,13 +50,15 @@ project_list = [
         "id": 3,
         "name": "Morse Code Encoder",
         "caption": "Console-based program that translates English into morse code script.",
-        "image": "assets/img/morse-screenshot.png"
+        "image": "assets/img/morse-screenshot.png",
+        "url": "https://github.com/phillandin/morse-encoder"
     },
     {
         "id": 4,
         "name": "Personal Website",
         "caption": "Source code for page, built using flask and bootstrap.",
-        "image": "assets/img/website.png"
+        "image": "assets/img/website.png",
+        "url": "https://github.com/phillandin/portfolio-website#readme"
     }
 ]
 

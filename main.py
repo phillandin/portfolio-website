@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request
-import project
+from flask import Flask, render_template
+from flask_bootstrap import Bootstrap
 
-app = Flask(__name__, template_folder="templates")
+app = Flask(__name__)
+Bootstrap(app)
 
 skills_list = [
     {
@@ -62,10 +63,6 @@ project_list = [
     }
 ]
 
-# for item in project_list:
-#     project = project.PortProject(ident=item["id"], name=item["name"], caption=item["caption"], image=item["image"])
-#
-# portfolio_items = [{key: value for (key, value) in dictionary}]
 
 @app.route('/')
 def home():
@@ -74,5 +71,3 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-# former navbar background: #bd5d38

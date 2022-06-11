@@ -232,14 +232,20 @@ p {
   }
 }
 
-.bounce-top {
-  margin: 0 50.5% 0 47% !important;
-  line-height: .8;
+.bounce-top, bounce-bottom {
+  margin: 0;
 }
 
-.bounce-bottom {
-  margin: 0 54% 0 47% !important;
-  line-height: .4;
+@media (min-width: 577px) {
+  .bounce-top {
+    margin: 0 50.5% 0 47% !important;
+    line-height: .8;
+  }
+
+  .bounce-bottom {
+    margin: 0 54% 0 47% !important;
+    line-height: .4;
+  }
 }
 
 .bounce-bracket {

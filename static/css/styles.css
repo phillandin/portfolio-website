@@ -11525,8 +11525,7 @@ html {
   }
   .bio {
     flex: 0 0 auto;
-    width: 45%;
-    padding-top: 1rem;
+    width: 50%;
   }
 }
 @media (min-width: 992px) {
@@ -11536,8 +11535,7 @@ html {
   }
   .bio {
     flex: 0 0 auto;
-    width: 33.33333333%;
-    padding-top: 0rem;
+    width: 36.33333333%;
   }
 }
 @media (min-width: 1200px) {
@@ -11546,7 +11544,7 @@ html {
     width: 36.66666666%;
   }
   .bio {
-    padding-top: 2rem;
+    width: 33.33333333%
   }
 }
 

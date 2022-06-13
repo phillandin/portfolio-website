@@ -11781,7 +11781,7 @@ footer.footer .social-link {
   text-decoration: none;
   transform: rotate(30deg) scale(.95);
 }
-@media (min-width: 102px) {
+@media (min-width: 360px) {
   .masthead {
     height: 100vh;
   }
@@ -11790,7 +11790,7 @@ footer.footer .social-link {
   }
 }
 
-#name-head {
+.name-head {
   margin-top: .25rem !important;
 }
 
@@ -11799,11 +11799,21 @@ footer.footer .social-link {
 }
 
 .col-left, .col-right {
+  width: 2%;
+}
+
+.col-center {
+  width: 96%;
+}
+
+@media (min-width: 540px) {
+  .col-left, .col-right {
   width: 20%;
 }
 
 .col-center {
   width: 60%;
+}
 }
 
 @media (min-width: 768px) {
@@ -11927,12 +11937,6 @@ footer.footer .social-link {
   }
   50% {
     transform: translateX(.75px)
-  }
-}
-
-@media (min-width: 577px) {
-  .bounce-left, .bounce-right {
-    margin: auto;
   }
 }
 

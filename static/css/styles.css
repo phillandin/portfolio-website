@@ -11831,6 +11831,13 @@ footer.footer .social-link {
   -webkit-animation: bounce-up 4s infinite;
   animation: bounce-up 4s infinite;
   height: 85px;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 577px) {
+  .bounce-up {
+    margin-bottom: 0;
+  }
 }
 
 @keyframes bounce-up {

@@ -52,7 +52,7 @@ project_list = [
         "name": "Morse Code Encoder",
         "caption": "Console-based program that translates English into morse code script.",
         "image": "assets/img/morse-screenshot.png",
-        "url": "https://github.com/phillandin/morse-encoder"
+        "url": "https://github.com/phillandin/morse-encoder#readme"
     },
     {
         "id": 4,
